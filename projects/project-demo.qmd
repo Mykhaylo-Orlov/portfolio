@@ -1,0 +1,13 @@
+---
+title: "Project Demo"
+format: html
+---
+
+# Project Demo
+
+## Static analysis
+- charts
+- summaries
+
+## Interactive example (via app link)
+[Go to Shiny app](../shiny/)
