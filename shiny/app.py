@@ -1,17 +1,18 @@
 from shiny import App, ui, render, reactive
 import pandas as pd
 import plotly.express as px
+from shinywidgets import output_widget  # optional if needed
 
-# sample data
+# Sample data
 df = pd.DataFrame({
     "x": range(1, 101),
     "y": [i**2 for i in range(1, 101)]
 })
 
 app_ui = ui.page_fluid(
-    ui.h2("Shiny Python demo"),
+    ui.h2("Shiny Python + Plotly demo"),
     ui.input_slider("n", "Points to show", min=10, max=100, value=50),
-    ui.output_plot("plot"),
+    ui.output_widget("plot"),  # changed from output_plot
     ui.output_text("summary")
 )
 
@@ -22,7 +23,7 @@ def server(input, output, session):
         return df.head(n)
 
     @output
-    @render.plot
+    @render.widget  # use render.widget for Plotly
     def plot():
         d = df_filtered()
         fig = px.scatter(d, x="x", y="y", title=f"First {input.n()} points")
