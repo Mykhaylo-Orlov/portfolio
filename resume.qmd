@@ -1,0 +1,15 @@
+---
+title: "Resume"
+format: html
+---
+
+# Resume
+
+## Education
+- Your degree, university
+
+## Experience
+- Internship / job
+
+## Skills
+- Python, SQL, Machine Learning

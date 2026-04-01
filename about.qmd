@@ -1,0 +1,10 @@
+---
+title: "About Me"
+format: html
+---
+
+# About Me
+
+I am a data science student interested in data analysis, visualization, and machine learning.
+
+This portfolio showcases my projects and skills.

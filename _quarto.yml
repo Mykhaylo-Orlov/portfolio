@@ -3,17 +3,16 @@ project:
 
 website:
   title: "My Portfolio"
-  description: "Quarto + Shiny portfolio"
   navbar:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "About"
-        href: about.qmd
       - text: "Projects"
         href: projects/project-demo.qmd
-      - text: "Shiny"
-        href: shiny/
+      - text: "Resume"
+        href: resume.qmd
+      - text: "About Me"
+        href: about.qmd
 
 format:
   html:
