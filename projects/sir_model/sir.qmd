@@ -1,0 +1,26 @@
+---
+title: "SIR Epidemic Model"
+format: html
+---
+
+# SIR Model Simulation
+
+This project uses **agent-based modeling** and **OOP principles** to simulate an epidemic.
+
+## Model Overview
+
+- `Population` class: Initializes agents (susceptible, infected, recovered)  
+- `SIRSimulator` class: Runs the simulation over time  
+- `Visualizer` class: Handles plotting results  
+
+## Run Simulation
+
+```{python}
+from projects.sir_model.sir_simulator import SIRSimulator
+from projects.sir_model.vis import Visualizer
+
+sim = SIRSimulator(N=500, I0=0.01, beta=0.2, mu=0.1, t_max=200)
+history = sim.run()
+
+viz = Visualizer(history, title="SIR Model Infection Dynamics")
+viz.plot_infection()
