@@ -1,6 +1,6 @@
 from shiny import App, ui, reactive, render
-from projects.sir_model.sir_simulator import SIRSimulator
-from projects.sir_model.visualizer import Visualizer
+from sir_model.sir_simulator import SIRSimulator
+from sir_model.visualizer import Visualizer
 
 # UI layout
 app_ui = ui.page_fluid(
