@@ -1,6 +1,6 @@
 from shiny import App, ui, reactive, render
 from seir_simulator import SEIRSimulator
-from shiny.visualizer import VisualizerSEIR
+from visualizer_seir import VisualizerSEIR
 
 class SEIRShinyApp:
     def __init__(self):
