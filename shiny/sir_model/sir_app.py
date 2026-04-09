@@ -1,6 +1,6 @@
 from shiny import App, ui, reactive, render
 from sir_model.sir_simulator import SIRSimulator
-from sir_model.visualizer import Visualizer
+from shiny.visualizer import VisualizerSIR
 
 # UI layout
 app_ui = ui.page_fluid(
@@ -28,7 +28,7 @@ def server(input, output, session):
     @render.ui
     def plot_ui():
         hist = history()
-        viz = Visualizer(hist, title=f"SIR: β={input.beta()}, μ={input.mu()}")
+        viz = VisualizerSIR(hist, title=f"SIR: β={input.beta()}, μ={input.mu()}")
         # Return HTML of plot
         return ui.HTML(viz.to_html())  # We'll add `to_html` in Visualizer
 

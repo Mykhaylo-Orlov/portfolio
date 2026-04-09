@@ -1,0 +1,28 @@
+---
+title: "SEIR Epidemic Model"
+format: html
+---
+
+# SEIR Model Simulation
+
+This project extends the SIR model by adding an **Exposed (E)** state and uses **OOP principles** to simulate the epidemic dynamics.
+
+## Model Overview
+
+- `PopulationSEIR` class: Initializes agents (Susceptible, Exposed, Infected, Recovered)  
+- `SEIRSimulator` class: Runs the simulation over time  
+- `Visualizer` class: Handles plotting results  
+
+## Run Simulation
+
+```{python}
+from projects.seir_model.seir_simulator import SEIRSimulator
+from projects.seir_model.vis import Visualizer
+
+# initialize SEIR simulation
+sim = SEIRSimulator(N=500, I0=0.01, beta=0.3, sigma=0.2, mu=0.1, t_max=200)
+history = sim.run()
+
+# visualize the results
+viz = VisualizerSEIR(history, title="SEIR Model Infection Dynamics")
+viz.plot_infection()
