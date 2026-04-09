@@ -35,7 +35,7 @@ class SEIRShinyApp:
         def plot_ui():
             history = run_sim()
             viz = VisualizerSEIR(history, title="SEIR Dynamics")
-            return ui.HTML(viz.plot_html())  # render as HTML
+            return ui.HTML(viz.to_html())  # render as HTML
         
 
 seir_app = SEIRShinyApp()
