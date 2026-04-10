@@ -1,0 +1,12 @@
+---
+title: "Projects"
+format: html
+---
+
+# My Projects
+
+## 🦠 SIR Model
+- [Open Project](sir_model/sir.qmd)
+
+## 🧪 SEIR Model
+- [Open Project](seir_model/seir.qmd)
