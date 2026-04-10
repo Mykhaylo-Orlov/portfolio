@@ -10,9 +10,9 @@ website:
       - text: "Projects"
         href: projects/project-demo.qmd
       - text: "SIR Model"
-        href: projects/sir_model/sir.qmd
+        href: shiny/sir_model/sir.qmd
       - text: "SEIR Model"
-        href: projects/seir_model/seir.qmd
+        href: shiny/seir_model/seir.qmd
       - text: "Resume"
         href: resume.qmd
       - text: "About Me"
