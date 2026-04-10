@@ -8,11 +8,7 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "Projects"
-        href: projects/project-demo.qmd
-      - text: "SIR Model"
-        href: shiny/sir_model/sir.qmd
-      - text: "SEIR Model"
-        href: shiny/seir_model/seir.qmd
+        href: projects/index.qmd
       - text: "Resume"
         href: projects/resume.qmd
       - text: "About Me"

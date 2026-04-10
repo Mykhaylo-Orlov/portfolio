@@ -8,8 +8,3 @@ format: html
 ## Static analysis
 - charts
 - summaries
-
-## Interactive App
-
-<iframe src="https://019d6464-1663-730f-f2b3-17b2dce4aa2b.share.connect.posit.cloud"
-        width="100%" height="600px"></iframe>

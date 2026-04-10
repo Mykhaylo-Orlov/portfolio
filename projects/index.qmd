@@ -3,10 +3,30 @@ title: "Projects"
 format: html
 ---
 
-# My Projects
+# 📊 My Projects
 
-## 🦠 SIR Model
-- [Open Project](sir_model/sir.qmd)
+This section showcases my work in data science, simulation, and object-oriented programming.
 
-## 🧪 SEIR Model
-- [Open Project](seir_model/seir.qmd)
+---
+
+## 🦠 SIR Epidemic Model
+
+Agent-based simulation of disease spread using OOP principles.
+
+- Models infection and recovery dynamics  
+- Implements modular design (Simulator + Visualizer)  
+- Demonstrates epidemic peak and stabilization  
+
+👉 [Open Project](sir_model/sir.qmd)
+
+---
+
+## 🧪 SEIR Epidemic Model
+
+Extension of the SIR model including an **Exposed (latent)** state.
+
+- More realistic epidemic dynamics  
+- Additional compartment (E) for incubation  
+- Built using reusable OOP structure  
+
+👉 [Open Project](seir_model/seir.qmd)
