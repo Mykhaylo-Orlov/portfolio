@@ -6,7 +6,7 @@ website:
   navbar:
     left:
       - text: "Home"
-        href: index.qmd
+        href: projects/index.qmd
       - text: "Projects"
         href: projects/project-demo.qmd
       - text: "SIR Model"
@@ -14,9 +14,9 @@ website:
       - text: "SEIR Model"
         href: shiny/seir_model/seir.qmd
       - text: "Resume"
-        href: resume.qmd
+        href: projects/resume.qmd
       - text: "About Me"
-        href: about.qmd
+        href: projects/about.qmd
 
 format:
   html:
