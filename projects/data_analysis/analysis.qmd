@@ -28,7 +28,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..", "..")))
 from projects.data_analysis.analysis_app import AnalysisApp
 
-app = AnalysisApp(r"data\file.csv")
+app = AnalysisApp("projects/data_analysis/data/file.csv")
 df = app.run()
 
 df.head()
