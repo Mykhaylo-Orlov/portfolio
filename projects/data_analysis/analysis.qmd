@@ -20,13 +20,26 @@ This project analyzes energy consumption data using an object-oriented pipeline.
 
 ## ▶️ Example
 
+
 ```{python}
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..", "..")))
 from projects.data_analysis.analysis_app import AnalysisApp
 
-app = AnalysisApp("data/file.csv")
+app = AnalysisApp(r"data\file.csv")
 df = app.run()
 
+df.head()
+```
+
+## 📈 Visualization
+
+```{python}
 from projects.data_analysis.visualizer import Visualizer
+from IPython.display import HTML
 
 viz = Visualizer(df)
-viz.plot()
+HTML(viz.to_html())
+```
