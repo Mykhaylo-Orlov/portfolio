@@ -1,0 +1,32 @@
+---
+title: "Energy Data Analysis"
+format: html
+---
+
+# 📊 Energy Data Analysis
+
+This project analyzes energy consumption data using an object-oriented pipeline.
+
+---
+
+## 🧱 OOP Structure
+
+- `DataLoader` → loads dataset  
+- `DataProcessor` → cleans and transforms data  
+- `Visualizer` → creates plots  
+- `AnalysisApp` → orchestrates workflow  
+
+---
+
+## ▶️ Example
+
+```{python}
+from projects.data_analysis.analysis_app import AnalysisApp
+
+app = AnalysisApp("data/file.csv")
+df = app.run()
+
+from projects.data_analysis.visualizer import Visualizer
+
+viz = Visualizer(df)
+viz.plot()

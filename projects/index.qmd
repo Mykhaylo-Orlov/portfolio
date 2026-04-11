@@ -29,4 +29,8 @@ Extension of the SIR model including an **Exposed (latent)** state.
 - Additional compartment (E) for incubation  
 - Built using reusable OOP structure  
 
-👉 [Open Project](seir_model/seir.qmd)
+- [Open Project](seir_model/seir.qmd)
+
+## 📊 Energy Data Analysis
+
+- [Open Project](data_analysis/analysis.qmd)
