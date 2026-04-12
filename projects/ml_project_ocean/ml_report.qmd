@@ -3,14 +3,14 @@ title: "Machine Learning Pipeline"
 format: html
 ---
 
-# 🤖 ML Pipeline Overview
+# ML Pipeline Overview
 
 This project implements a **modular machine learning pipeline** using **object-oriented design**.  
 It handles data loading, preprocessing, model training, evaluation, and result export in a single workflow.
 
 ---
 
-## 📊 Pipeline Overview
+## Pipeline Overview
 
 The pipeline follows these main steps:
 
@@ -22,7 +22,7 @@ The pipeline follows these main steps:
 
 ---
 
-## 🧱 Object-Oriented Design
+## Object-Oriented Design
 
 The pipeline is encapsulated in the `MLPipeline` class:
 
@@ -42,7 +42,7 @@ This structure makes the pipeline reusable, testable, and easy to extend.
 
 ---
 
-## ▶️ Run Pipeline
+## Run Pipeline
 
 ```{python}
 import sys

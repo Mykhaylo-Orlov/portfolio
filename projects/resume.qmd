@@ -11,7 +11,7 @@ Vienna, Austria
 
 ---
 
-## 🎯 Profile
+## Profile
 
 A motivated Data Science student specializing in data analysis, machine learning, and applied mathematical modeling. Strong interest in environmental systems, climate science, and computational social science.
 
@@ -19,7 +19,7 @@ Proven ability to work independently and in teams, with strong problem-solving s
 
 ---
 
-## 🎓 Education
+## Education
 
 ### Central European University (CEU), Vienna  
 **BSc in Data Science and Society**  
@@ -38,11 +38,11 @@ GPA: 8.68 / 10
 
 ---
 
-## 💼 Work Experience
+## Work Experience
 
 ### BIOMIN Holding GmbH (dsm-firmenich)  
 **Intern – Biostatistical Team**  
-*May 2025 – Dec 2025 (expected)*
+*May 2025 – June 2026 (expected)*
 
 - Supported statistical analysis for biological research projects  
 - Developed Python automation tools for animal trial analysis  
@@ -60,7 +60,7 @@ GPA: 8.68 / 10
 
 ---
 
-## 🧠 Skills
+## Skills
 
 **Programming:** Python, R, Bash  
 **Data Science:** Machine Learning, Data Mining  
@@ -71,13 +71,13 @@ GPA: 8.68 / 10
 
 ---
 
-## 🛠 Tools
+## Tools
 
 MS Office, GitHub, Bitbucket
 
 ---
 
-## 🌍 Languages
+## Languages
 
 - English — Fluent  
 - Ukrainian — Fluent  

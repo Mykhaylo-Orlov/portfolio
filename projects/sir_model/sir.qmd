@@ -3,14 +3,14 @@ title: "SIR Epidemic Model"
 format: html
 ---
 
-# 🦠 SIR Model Simulation
+# SIR Model Simulation
 
 This project implements an **agent-based SIR epidemic model** using **object-oriented programming (OOP)** principles.  
 It simulates how a disease spreads through a population over time.
 
 ---
 
-## 📊 Model Overview
+## Model Overview
 
 The population is divided into three states:
 
@@ -20,7 +20,7 @@ The population is divided into three states:
 
 ---
 
-## 🧱 Object-Oriented Design
+## Object-Oriented Design
 
 This project is structured using OOP to separate concerns and improve reusability:
 
@@ -37,7 +37,7 @@ This modular structure allows the model to be easily extended (e.g., to SEIR).
 
 ---
 
-## ▶️ Run Simulation
+## Run Simulation
 
 ```{python}
 import sys

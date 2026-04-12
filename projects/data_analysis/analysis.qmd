@@ -3,13 +3,13 @@ title: "Energy Data Analysis"
 format: html
 ---
 
-# 📊 Energy Data Analysis
+# Energy Data Analysis
 
 This project analyzes energy consumption data using an object-oriented pipeline.
 
 ---
 
-## 🧱 OOP Structure
+## OOP Structure
 
 - `DataLoader` → loads dataset  
 - `DataProcessor` → cleans and transforms data  
@@ -18,7 +18,7 @@ This project analyzes energy consumption data using an object-oriented pipeline.
 
 ---
 
-## ▶️ Example
+## Example
 
 
 ```{python}
@@ -39,7 +39,7 @@ df = app.run()
 df.head()
 ```
 
-## 📈 Visualization
+## Visualization
 
 ```{python}
 from models.data_analysis.visualizer import Visualizer
