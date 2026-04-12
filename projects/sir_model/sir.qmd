@@ -20,17 +20,6 @@ The population is divided into three states:
 
 ---
 
-## 🌐 Interactive Version
-
-You can explore the model interactively:
-
-<iframe src="https://019d7390-16fd-270a-af3a-4accbdb627b4.share.connect.posit.cloud"
-        width="100%" height="600px"></iframe>
-
-🔗 [Open in full screen](https://019d7390-16fd-270a-af3a-4accbdb627b4.share.connect.posit.cloud)
-
----
-
 ## 🧱 Object-Oriented Design
 
 This project is structured using OOP to separate concerns and improve reusability:
@@ -79,6 +68,11 @@ viz.plot()
 
 ## Interactive Simulation
 
-<a href="https://019d81ba-784d-67dd-af62-2fb142c2c715.share.connect.posit.cloud" target="_blank">
-  🚀 Open Interactive SIR Model
-</a>
+You can explore the model interactively:
+
+<iframe src="https://019d81ba-784d-67dd-af62-2fb142c2c715.share.connect.posit.cloud"
+        width="100%" height="600px"></iframe>
+
+🔗 [Open in full screen](https://019d81ba-784d-67dd-af62-2fb142c2c715.share.connect.posit.cloud)
+
+---

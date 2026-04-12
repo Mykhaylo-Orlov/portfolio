@@ -36,6 +36,11 @@ viz.plot()
 
 ## Interactive Simulation
 
-<a href="https://019d81bb-1c0c-fe95-a642-e9380d855ff0.share.connect.posit.cloud" target="_blank">
-  🚀 Open Interactive SEIR Model
-</a>
+You can explore the model interactively:
+
+<iframe src="https://019d81bb-1c0c-fe95-a642-e9380d855ff0.share.connect.posit.cloud"
+        width="100%" height="600px"></iframe>
+
+[Open in full screen](hhttps://019d81bb-1c0c-fe95-a642-e9380d855ff0.share.connect.posit.cloud)
+
+---
