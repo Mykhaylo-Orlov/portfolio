@@ -16,8 +16,8 @@ This project extends the SIR model by adding an **Exposed (E)** state and uses *
 ## Run Simulation
 
 ```{python}
-from projects.seir_model.seir_simulator import SEIRSimulator
-from projects.seir_model.vis import Visualizer
+from shiny.seir_model.seir_simulator import SEIRSimulator
+from shiny.seir_model.vis import Visualizer
 
 # initialize SEIR simulation
 sim = SEIRSimulator(N=500, I0=0.01, beta=0.3, sigma=0.2, mu=0.1, t_max=200)
@@ -26,3 +26,10 @@ history = sim.run()
 # visualize the results
 viz = VisualizerSEIR(history, title="SEIR Model Infection Dynamics")
 viz.plot_infection()
+```
+
+## Interactive Simulation
+
+<a href="https://your-shiny-app-link.com" target="_blank">
+  🚀 Open Interactive SEIR Model
+</a>
