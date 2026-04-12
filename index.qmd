@@ -3,16 +3,31 @@ title: "Home"
 format: html
 ---
 
-# Hi — I'm a Data Science Student
+# Hi — I am Mykhaylo Orlov, a Data Scientist
 
-Welcome to my portfolio. Below are featured projects and an interactive data demo.
+Welcome to my portfolio. Here you will find a selection of my data science projects developed during my studies.
 
-## Featured Project
+For more detailed descriptions, please visit the **Projects** page.
 
-- Project: Predictive modeling of housing prices — see details in the Projects section.
+---
 
-## Interactive Demo
+## Featured Projects
 
-Run the sample Shiny app locally and open:
+### Epidemic Modeling (SIR & SEIR Models)
+These projects explore how infectious diseases spread using classical epidemiological models (SIR and SEIR), applied under different scenarios and assumptions.
 
-You can embed the running app using an iframe in a hosted environment.
+---
+
+### Fossil Fuel Emissions Analysis
+An exploratory data analysis of global fossil fuel emissions, focusing on trends, patterns, and environmental impact over time.
+
+---
+
+### Machine Learning for Wave Height Prediction
+A machine learning project aimed at predicting significant wave height using environmental and oceanographic data.
+
+---
+
+## About This Portfolio
+
+This site showcases my work in data science, including modeling, data analysis, and machine learning projects. Each project includes code, methodology, and insights gained from the analysis.

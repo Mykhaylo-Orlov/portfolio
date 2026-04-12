@@ -5,6 +5,29 @@ format: html
 
 # About Me
 
-I am a data science student interested in data analysis, visualization, and machine learning.
+My name is Mykhaylo Orlov. I am a graduating Bachelor’s student at the Central European University in Vienna.
 
-This portfolio showcases my projects and skills.
+I major in Data Science and Society, with a minor in Environmental Sciences.
+
+- Full degree: Bachelor of Science in Data Science and Society
+
+---
+
+## Academic Background
+
+My studies cover a broad range of scientific disciplines, including computer science, statistics, physics, and computational social sciences. This interdisciplinary foundation shapes how I approach data-driven problems.
+
+---
+
+## Areas of Interest
+
+- Climate change and data-driven environmental analysis  
+- Computational social science and modeling of social systems  
+- Applied mathematics in natural and social sciences  
+- Computer science and development of scientific tools and applications  
+
+---
+
+## About My Work
+
+I am particularly interested in using data science and modeling to better understand complex real-world systems, especially in environmental and social contexts. If you are more interested in my working experience, please refer to the **Resume** page.

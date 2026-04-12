@@ -3,13 +3,102 @@ title: "Resume"
 format: html
 ---
 
-# Resume
+# Mykhaylo Orlov
 
-## Education
-- Your degree, university
+Vienna, Austria  
+📧 mishaorlov1000@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/mykhaylo-orlov)
 
-## Experience
-- Internship / job
+---
 
-## Skills
-- Python, SQL, Machine Learning
+## 🎯 Profile
+
+A motivated Data Science student specializing in data analysis, machine learning, and applied mathematical modeling. Strong interest in environmental systems, climate science, and computational social science.
+
+Proven ability to work independently and in teams, with strong problem-solving skills and experience handling data-driven research projects under time constraints.
+
+---
+
+## 🎓 Education
+
+### Central European University (CEU), Vienna  
+**BSc in Data Science and Society**  
+*Sep 2023 – Expected Jun 2026*  
+GPA: 3.89 / 4.00
+
+- Focus areas: Data Science, Applied Mathematics, Programming, Climate Science
+- Strong foundation in statistical modeling, machine learning, and computational methods
+
+---
+
+### Higher School of Economics (HSE), Moscow  
+**BSc in World Economy**  
+*Sep 2021 – Sep 2022*  
+GPA: 8.68 / 10
+
+---
+
+## 💼 Work Experience
+
+### BIOMIN Holding GmbH (dsm-firmenich)  
+**Intern – Biostatistical Team**  
+*May 2025 – Dec 2025 (expected)*
+
+- Supported statistical analysis for biological research projects  
+- Developed Python automation tools for animal trial analysis  
+- Contributed to R package development for metabolomics data processing  
+- Improved efficiency of biological data workflows and decision-making
+
+---
+
+### Higher School of Economics (HSE), Moscow  
+**Teaching Assistant – History of Economic Doctrine**  
+*Apr 2022 – Sep 2022*
+
+- Assisted in teaching and grading academic assignments  
+- Supported course delivery and student engagement
+
+---
+
+## 🧠 Skills
+
+**Programming:** Python, R, Bash  
+**Data Science:** Machine Learning, Data Mining  
+**Databases & Systems:** PostgreSQL, Linux  
+**Data Analysis & Visualization:** Pandas, Matplotlib, Seaborn, R visualization packages  
+**Mathematics:** Linear Algebra, Calculus, Numerical Methods, Optimization  
+**Server Work:** Linux, SSH, remote servers, process automation
+
+---
+
+## 🛠 Tools
+
+MS Office, GitHub, Bitbucket
+
+---
+
+## 🌍 Languages
+
+- English — Fluent  
+- Ukrainian — Fluent  
+- Russian — Native  
+- German — Beginner  
+
+---
+
+## University Projects
+
+- Modeling the Relationship Between Renewables and Fossil Fuels (2024)  
+- Prediction of Significant Wave Height (2024)  
+- Stochastic SIR Epidemic Model Simulation (2024)  
+- Gradient Descent Methods for Linear Systems (2024)  
+- Predicting Protest Violence using Socio-economic Data (2025)
+
+---
+
+## Work Projects
+
+- R package for untargeted metabolomics
+- Automated pipeline for efficient statistical analysis of animal trials data
+
+---

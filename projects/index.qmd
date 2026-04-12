@@ -3,38 +3,50 @@ title: "Projects"
 format: html
 ---
 
-# 📊 My Projects
+# My Projects
 
-This section showcases my work in data science, simulation, and object-oriented programming.
-
----
-
-## 🦠 SIR Epidemic Model
-
-Agent-based simulation of disease spread using OOP principles.
-
-- Models infection and recovery dynamics  
-- Implements modular design (Simulator + Visualizer)  
-- Demonstrates epidemic peak and stabilization  
-
-👉 [Open Project](sir_model/sir.qmd)
+This page showcases my work in data science, simulation modeling, and machine learning. Each project includes code, methodology, and key insights.
 
 ---
 
-## 🧪 SEIR Epidemic Model
+## SIR Epidemic Model
 
-Extension of the SIR model including an **Exposed (latent)** state.
+Agent-based simulation of disease spread using object-oriented programming principles.
 
-- More realistic epidemic dynamics  
-- Additional compartment (E) for incubation  
-- Built using reusable OOP structure  
+- Models infection, recovery, and population dynamics  
+- Modular design (Simulator + Visualizer architecture)  
+- Demonstrates epidemic peak behavior and stabilization  
 
-- [Open Project](seir_model/seir.qmd)
+- [View Project](sir_model/sir.qmd)
 
-## 📊 Energy Data Analysis
+---
 
-- [Open Project](data_analysis/analysis.qmd)
+## SEIR Epidemic Model
 
-## Machine Learning project on Ocean analysis
+An extension of the SIR model that introduces an **Exposed (latent)** compartment for more realistic epidemic modeling.
 
-- [Open Project](ml_project_ocean/ml_report.qmd)
+- Includes incubation period before infection  
+- Improved realism compared to SIR model  
+- Built with reusable and extensible OOP structure  
+
+- [View Project](seir_model/seir.qmd)
+
+---
+
+## Energy Data Analysis
+
+Exploratory data analysis of energy-related datasets, focusing on trends, comparisons, and insights into consumption and production patterns.
+
+- [View Project](data_analysis/analysis.qmd)
+
+---
+
+## Machine Learning for Ocean Wave Prediction
+
+Machine learning project focused on predicting ocean conditions using environmental data.
+
+- Applies ML models to oceanographic variables  
+- Predicts significant wave height  
+- Evaluates model performance and accuracy  
+
+- [View Project](ml_project_ocean/ml_report.qmd)
