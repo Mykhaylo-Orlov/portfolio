@@ -1,8 +1,8 @@
-from config import TRAIN_PATH, TARGET
-from src.data_loader import load_data
-from src.processor import clean_data
-from src.models import get_models
-from src.evaluate import evaluate
+from models.ml_project.config import TRAIN_PATH, TARGET
+from models.ml_project.src.data_loader import load_data
+from models.ml_project.src.processor import clean_data
+from models.ml_project.src.models import get_models
+from models.ml_project.src.evaluate import evaluate
 from pathlib import Path
 import matplotlib.pyplot as plt
 

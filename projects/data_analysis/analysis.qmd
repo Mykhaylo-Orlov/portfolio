@@ -23,12 +23,17 @@ This project analyzes energy consumption data using an object-oriented pipeline.
 
 ```{python}
 import sys
-import os
+from pathlib import Path
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..", "..")))
-from projects.data_analysis.analysis_app import AnalysisApp
+PROJECT_ROOT = Path().resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT))
 
-app = AnalysisApp("data/file.csv")
+from models.data_analysis.analysis_app import AnalysisApp
+
+
+data_path = PROJECT_ROOT / "models" / "data_analysis" / "data" / "file.csv"
+app = AnalysisApp(str(data_path))
+
 df = app.run()
 
 df.head()
@@ -37,7 +42,7 @@ df.head()
 ## 📈 Visualization
 
 ```{python}
-from projects.data_analysis.visualizer import Visualizer
+from models.data_analysis.visualizer import Visualizer
 from IPython.display import HTML
 
 viz = Visualizer(df)

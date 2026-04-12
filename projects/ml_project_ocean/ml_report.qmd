@@ -45,7 +45,13 @@ This structure makes the pipeline reusable, testable, and easy to extend.
 ## ▶️ Run Pipeline
 
 ```{python}
-from src.pipeline import MLPipeline
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path().resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT))
+
+from models.ml_project.src.pipeline import MLPipeline
 
 # Initialize and run pipeline
 pipeline = MLPipeline()

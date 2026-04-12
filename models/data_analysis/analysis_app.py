@@ -1,6 +1,6 @@
-from data_loader import DataLoader
-from processor import DataProcessor
-from visualizer import Visualizer
+from .data_loader import DataLoader
+from .processor import DataProcessor
+from .visualizer import Visualizer
 
 class AnalysisApp:
     def __init__(self, path):
