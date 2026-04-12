@@ -58,7 +58,7 @@ PROJECT_ROOT = Path().resolve().parents[1]
 sys.path.append(str(PROJECT_ROOT))
 
 from models.sir.sir_simulator import SIRSimulator
-from models.sir_model.visualizer_sir import VisualizerSIR
+from models.sir.visualizer_sir import VisualizerSIR
 
 # Initialize simulation
 sim = SIRSimulator(
