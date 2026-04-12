@@ -3,8 +3,6 @@ title: "About Me"
 format: html
 ---
 
-# About Me
-
 My name is Mykhaylo Orlov. I am a graduating Bachelor’s student at the Central European University in Vienna.
 
 I major in Data Science and Society, with a minor in Environmental Sciences.
@@ -31,3 +29,5 @@ My studies cover a broad range of scientific disciplines, including computer sci
 ## About My Work
 
 I am particularly interested in using data science and modeling to better understand complex real-world systems, especially in environmental and social contexts. If you are more interested in my working experience, please refer to the **Resume** page.
+
+![](images/profile.jpg)
