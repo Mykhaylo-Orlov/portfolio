@@ -1,0 +1,78 @@
+---
+title: "Machine Learning Pipeline"
+format: html
+---
+
+# 🤖 ML Pipeline Overview
+
+This project implements a **modular machine learning pipeline** using **object-oriented design**.  
+It handles data loading, preprocessing, model training, evaluation, and result export in a single workflow.
+
+---
+
+## 📊 Pipeline Overview
+
+The pipeline follows these main steps:
+
+- **Data Loading** – reads raw data from disk  
+- **Data Cleaning** – handles preprocessing and feature preparation  
+- **Model Training** – trains multiple models for comparison  
+- **Evaluation** – selects the best model based on RMSE  
+- **Output Generation** – saves predictions and visualizations  
+
+---
+
+## 🧱 Object-Oriented Design
+
+The pipeline is encapsulated in the `MLPipeline` class:
+
+- **`load_and_prepare()`**  
+  Loads dataset and splits it into training and validation sets  
+
+- **`train_and_evaluate()`**  
+  Trains all models and stores their RMSE scores  
+
+- **`select_best_model()`**  
+  Chooses the best-performing model  
+
+- **`run()`**  
+  Executes the full workflow end-to-end  
+
+This structure makes the pipeline reusable, testable, and easy to extend.
+
+---
+
+## ▶️ Run Pipeline
+
+```{python}
+from src.pipeline import MLPipeline
+
+# Initialize and run pipeline
+pipeline = MLPipeline()
+results = pipeline.run()
+
+print("Best model:", results["best_model_name"])
+print("RMSE:", results["rmse"])
+```
+
+---
+
+## Outputs
+
+After execution, the pipeline generates:
+
+- outputs/predictions.csv – model predictions vs actual values  
+- outputs/figures/feature_importance.png – feature importance plot (if available)  
+
+---
+
+## Extensibility
+
+The pipeline can be easily extended by:
+
+- Adding new models in `get_models()`  
+- Improving preprocessing in `clean_data()`  
+- Adding additional evaluation metrics  
+- Integrating hyperparameter tuning  
+
+---

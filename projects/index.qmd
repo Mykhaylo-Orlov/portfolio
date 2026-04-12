@@ -34,3 +34,7 @@ Extension of the SIR model including an **Exposed (latent)** state.
 ## 📊 Energy Data Analysis
 
 - [Open Project](data_analysis/analysis.qmd)
+
+## Machine Learning project on Ocean analysis
+
+- [Open Project](ml_report_ocean/ml_report.qmd)
