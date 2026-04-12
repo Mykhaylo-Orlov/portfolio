@@ -51,8 +51,8 @@ This modular structure allows the model to be easily extended (e.g., to SEIR).
 ## ▶️ Run Simulation
 
 ```{python}
-from projects.sir_model.sir_simulator import SIRSimulator
-from projects.sir_model.vis import VisualizerSIR
+from models.sir.sir_simulator import SIRSimulator
+from models.sir_model.visualizer_sir import VisualizerSIR
 
 # Initialize simulation
 sim = SIRSimulator(
