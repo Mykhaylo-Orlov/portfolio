@@ -1,7 +1,5 @@
 import numpy as np
 import pandas as pd
-import warnings
-warnings.simplefilter("ignore", pd.errors.SettingWithCopyWarning)
 
 class DataProcessor:
     def __init__(self, df):
