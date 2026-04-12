@@ -35,16 +35,7 @@ data_path = PROJECT_ROOT / "models" / "data_analysis" / "data" / "file.csv"
 app = AnalysisApp(str(data_path))
 
 df = app.run()
-
+print(df["state"].unique())
 df.head()
 ```
 
-## Visualization
-
-```{python}
-from models.data_analysis.visualizer import Visualizer
-from IPython.display import HTML
-
-viz = Visualizer(df)
-HTML(viz.to_html())
-```

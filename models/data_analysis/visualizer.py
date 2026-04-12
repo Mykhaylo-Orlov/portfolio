@@ -3,40 +3,38 @@ import io
 import base64
 
 class Visualizer:
-    def __init__(self, df, title="Energy Analysis"):
+    def __init__(self, df, title="Energy Analysis in EU"):
         self.df = df
         self.title = title
 
     def plot(self):
-        # keep only EU total or one country (example: EU-27 Total)
-        df = self.df[self.df["state"] == "total_EU"]
 
-        # convert wide → long format (years into rows)
-        years = [str(y) for y in range(1990, 2023)]
+        df = self.df
 
-        df_long = df.melt(
-            id_vars=["energy_type"],
-            value_vars=years,
-            var_name="year",
-            value_name="value"
-        )
+        # filter EU total
+        df = df[df["state"] == "total_eu"]
 
-        df_long["year"] = df_long["year"].astype(int)
-        df_long["value"] = df_long["value"].astype(str).str.replace(",", ".").astype(float)
+        # detect year columns automatically
+        year_cols = [c for c in df.columns if c.isdigit()]
 
+        # convert to numeric
+        df[year_cols] = df[year_cols].replace(",", ".", regex=True)
+        df[year_cols] = df[year_cols].astype(float)
+
+        # plot energy types over time
         plt.figure(figsize=(12,6))
 
-        for energy in df_long["energy_type"].unique():
-            subset = df_long[df_long["energy_type"] == energy]
-            plt.plot(subset["year"], subset["value"], label=energy)
+        for energy in df["energy_type"].unique():
+            row = df[df["energy_type"] == energy][year_cols].T
+            plt.plot(year_cols, row.values.flatten(), label=energy)
 
         plt.title(self.title)
         plt.xlabel("Year")
-        plt.ylabel("Energy consumption (ktoe)")
+        plt.ylabel("Energy consumption")
+        plt.xticks(rotation=45)
         plt.legend()
         plt.tight_layout()
         plt.show()
-
     def to_html(self):
         buf = io.BytesIO()
         plt.figure(figsize=(10,5))
