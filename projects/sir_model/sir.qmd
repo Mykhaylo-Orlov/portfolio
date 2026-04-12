@@ -75,3 +75,10 @@ history = sim.run()
 # Visualize results
 viz = VisualizerSIR(history, title="SIR Model Infection Dynamics")
 viz.plot()
+```
+
+## Interactive Simulation
+
+<a href="https://019d81ba-784d-67dd-af62-2fb142c2c715.share.connect.posit.cloud" target="_blank">
+  🚀 Open Interactive SIR Model
+</a>

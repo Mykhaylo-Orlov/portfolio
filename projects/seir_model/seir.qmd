@@ -31,11 +31,11 @@ history = sim.run()
 
 # visualize the results
 viz = VisualizerSEIR(history, title="SEIR Model Infection Dynamics")
-viz.plot_infection()
+viz.plot()
 ```
 
 ## Interactive Simulation
 
-<a href="https://your-shiny-app-link.com" target="_blank">
+<a href="https://019d81bb-1c0c-fe95-a642-e9380d855ff0.share.connect.posit.cloud" target="_blank">
   🚀 Open Interactive SEIR Model
 </a>
