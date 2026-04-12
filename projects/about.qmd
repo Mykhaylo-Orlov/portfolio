@@ -2,6 +2,10 @@
 title: "About Me"
 format: html
 ---
+<div style="float: right; margin-left: 20px; margin-bottom: 10px;">
+  <img src="images/profile.jpg" width="180">
+</div>
+
 
 My name is Mykhaylo Orlov. I am a graduating Bachelor’s student at the Central European University in Vienna.
 
@@ -29,5 +33,3 @@ My studies cover a broad range of scientific disciplines, including computer sci
 ## About My Work
 
 I am particularly interested in using data science and modeling to better understand complex real-world systems, especially in environmental and social contexts. If you are more interested in my working experience, please refer to the **Resume** page.
-
-![](images/profile.jpg)
