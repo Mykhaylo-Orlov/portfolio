@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "projects/sir_model/sir.html",
+    "href": "projects/sir_model/sir.html",
+    "title": "SIR Epidemic Model",
+    "section": "",
+    "text": "This project implements an agent-based SIR epidemic model using object-oriented programming (OOP) principles.\nIt simulates how a disease spreads through a population over time.\n\n\n\nThe population is divided into three states:\n\nSusceptible (S) – healthy individuals who can become infected\n\nInfected (I) – individuals who can spread the disease\n\nRecovered (R) – individuals who are no longer infectious\n\n\n\n\n\nThis project is structured using OOP to separate concerns and improve reusability:\n\nPopulation class\nHandles initialization of agents and their states\nSIRSimulator class\nEncapsulates the simulation logic and time evolution\nVisualizerSIR class\nResponsible for plotting and displaying results\n\nThis modular structure allows the model to be easily extended (e.g., to SEIR).\n\n\n\n\n\nimport sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.sir.sir_simulator import SIRSimulator\nfrom models.sir.visualizer_sir import VisualizerSIR\n\n# Initialize simulation\nsim = SIRSimulator(\n    N=500,\n    I0=0.01,\n    beta=0.2,\n    mu=0.1,\n    t_max=200\n)\n\n# Run simulation\nhistory = sim.run()\n\n# Visualize results\nviz = VisualizerSIR(history, title=\"SIR Model Infection Dynamics\")\nviz.plot()\n\n\n\n\n\n\n\n\n\n\n\nYou can explore the model interactively:\n\n\n🔗 Open in full screen"
+  },
+  {
+    "objectID": "projects/sir_model/sir.html#model-overview",
+    "href": "projects/sir_model/sir.html#model-overview",
+    "title": "SIR Epidemic Model",
+    "section": "",
+    "text": "The population is divided into three states:\n\nSusceptible (S) – healthy individuals who can become infected\n\nInfected (I) – individuals who can spread the disease\n\nRecovered (R) – individuals who are no longer infectious"
+  },
+  {
+    "objectID": "projects/sir_model/sir.html#object-oriented-design",
+    "href": "projects/sir_model/sir.html#object-oriented-design",
+    "title": "SIR Epidemic Model",
+    "section": "",
+    "text": "This project is structured using OOP to separate concerns and improve reusability:\n\nPopulation class\nHandles initialization of agents and their states\nSIRSimulator class\nEncapsulates the simulation logic and time evolution\nVisualizerSIR class\nResponsible for plotting and displaying results\n\nThis modular structure allows the model to be easily extended (e.g., to SEIR)."
+  },
+  {
+    "objectID": "projects/sir_model/sir.html#run-simulation",
+    "href": "projects/sir_model/sir.html#run-simulation",
+    "title": "SIR Epidemic Model",
+    "section": "",
+    "text": "import sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.sir.sir_simulator import SIRSimulator\nfrom models.sir.visualizer_sir import VisualizerSIR\n\n# Initialize simulation\nsim = SIRSimulator(\n    N=500,\n    I0=0.01,\n    beta=0.2,\n    mu=0.1,\n    t_max=200\n)\n\n# Run simulation\nhistory = sim.run()\n\n# Visualize results\nviz = VisualizerSIR(history, title=\"SIR Model Infection Dynamics\")\nviz.plot()"
+  },
+  {
+    "objectID": "projects/sir_model/sir.html#interactive-simulation",
+    "href": "projects/sir_model/sir.html#interactive-simulation",
+    "title": "SIR Epidemic Model",
+    "section": "",
+    "text": "You can explore the model interactively:\n\n\n🔗 Open in full screen"
+  },
+  {
+    "objectID": "projects/resume.html",
+    "href": "projects/resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Vienna, Austria\n📧 mishaorlov1000@gmail.com\n🔗 LinkedIn\n\n\n\nA motivated Data Science student specializing in data analysis, machine learning, and applied mathematical modeling. Strong interest in environmental systems, climate science, and computational social science.\nProven ability to work independently and in teams, with strong problem-solving skills and experience handling data-driven research projects under time constraints.\n\n\n\n\n\n\nBSc in Data Science and Society\nSep 2023 – Expected Jun 2026\nGPA: 3.89 / 4.00\n\nFocus areas: Data Science, Applied Mathematics, Programming, Climate Science\nStrong foundation in statistical modeling, machine learning, and computational methods\n\n\n\n\n\nBSc in World Economy\nSep 2021 – Sep 2022\nGPA: 8.68 / 10\n\n\n\n\n\n\n\nIntern – Biostatistical Team\nMay 2025 – June 2026 (expected)\n\nSupported statistical analysis for biological research projects\n\nDeveloped Python automation tools for animal trial analysis\n\nContributed to R package development for metabolomics data processing\n\nImproved efficiency of biological data workflows and decision-making\n\n\n\n\n\nTeaching Assistant – History of Economic Doctrine\nApr 2022 – Sep 2022\n\nAssisted in teaching and grading academic assignments\n\nSupported course delivery and student engagement\n\n\n\n\n\n\nProgramming: Python, R, Bash\nData Science: Machine Learning, Data Mining\nDatabases & Systems: PostgreSQL, Linux\nData Analysis & Visualization: Pandas, Matplotlib, Seaborn, R visualization packages\nMathematics: Linear Algebra, Calculus, Numerical Methods, Optimization\nServer Work: Linux, SSH, remote servers, process automation\n\n\n\n\nMS Office, GitHub, Bitbucket\n\n\n\n\n\nEnglish — Fluent\n\nUkrainian — Fluent\n\nRussian — Native\n\nGerman — Beginner\n\n\n\n\n\n\nModeling the Relationship Between Renewables and Fossil Fuels (2024)\n\nPrediction of Significant Wave Height (2024)\n\nStochastic SIR Epidemic Model Simulation (2024)\n\nGradient Descent Methods for Linear Systems (2024)\n\nPredicting Protest Violence using Socio-economic Data (2025)\n\n\n\n\n\n\nR package for untargeted metabolomics\nAutomated pipeline for efficient statistical analysis of animal trials data"
+  },
+  {
+    "objectID": "projects/resume.html#profile",
+    "href": "projects/resume.html#profile",
+    "title": "Resume",
+    "section": "",
+    "text": "A motivated Data Science student specializing in data analysis, machine learning, and applied mathematical modeling. Strong interest in environmental systems, climate science, and computational social science.\nProven ability to work independently and in teams, with strong problem-solving skills and experience handling data-driven research projects under time constraints."
+  },
+  {
+    "objectID": "projects/resume.html#education",
+    "href": "projects/resume.html#education",
+    "title": "Resume",
+    "section": "",
+    "text": "BSc in Data Science and Society\nSep 2023 – Expected Jun 2026\nGPA: 3.89 / 4.00\n\nFocus areas: Data Science, Applied Mathematics, Programming, Climate Science\nStrong foundation in statistical modeling, machine learning, and computational methods\n\n\n\n\n\nBSc in World Economy\nSep 2021 – Sep 2022\nGPA: 8.68 / 10"
+  },
+  {
+    "objectID": "projects/resume.html#work-experience",
+    "href": "projects/resume.html#work-experience",
+    "title": "Resume",
+    "section": "",
+    "text": "Intern – Biostatistical Team\nMay 2025 – June 2026 (expected)\n\nSupported statistical analysis for biological research projects\n\nDeveloped Python automation tools for animal trial analysis\n\nContributed to R package development for metabolomics data processing\n\nImproved efficiency of biological data workflows and decision-making\n\n\n\n\n\nTeaching Assistant – History of Economic Doctrine\nApr 2022 – Sep 2022\n\nAssisted in teaching and grading academic assignments\n\nSupported course delivery and student engagement"
+  },
+  {
+    "objectID": "projects/resume.html#skills",
+    "href": "projects/resume.html#skills",
+    "title": "Resume",
+    "section": "",
+    "text": "Programming: Python, R, Bash\nData Science: Machine Learning, Data Mining\nDatabases & Systems: PostgreSQL, Linux\nData Analysis & Visualization: Pandas, Matplotlib, Seaborn, R visualization packages\nMathematics: Linear Algebra, Calculus, Numerical Methods, Optimization\nServer Work: Linux, SSH, remote servers, process automation"
+  },
+  {
+    "objectID": "projects/resume.html#tools",
+    "href": "projects/resume.html#tools",
+    "title": "Resume",
+    "section": "",
+    "text": "MS Office, GitHub, Bitbucket"
+  },
+  {
+    "objectID": "projects/resume.html#languages",
+    "href": "projects/resume.html#languages",
+    "title": "Resume",
+    "section": "",
+    "text": "English — Fluent\n\nUkrainian — Fluent\n\nRussian — Native\n\nGerman — Beginner"
+  },
+  {
+    "objectID": "projects/resume.html#university-projects",
+    "href": "projects/resume.html#university-projects",
+    "title": "Resume",
+    "section": "",
+    "text": "Modeling the Relationship Between Renewables and Fossil Fuels (2024)\n\nPrediction of Significant Wave Height (2024)\n\nStochastic SIR Epidemic Model Simulation (2024)\n\nGradient Descent Methods for Linear Systems (2024)\n\nPredicting Protest Violence using Socio-economic Data (2025)"
+  },
+  {
+    "objectID": "projects/resume.html#work-projects",
+    "href": "projects/resume.html#work-projects",
+    "title": "Resume",
+    "section": "",
+    "text": "R package for untargeted metabolomics\nAutomated pipeline for efficient statistical analysis of animal trials data"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page showcases my work in data science, simulation modeling, and machine learning. Each project includes code, methodology, and key insights.\n\n\n\nAgent-based simulation of disease spread using object-oriented programming principles.\n\nModels infection, recovery, and population dynamics\n\nModular design (Simulator + Visualizer architecture)\n\nDemonstrates epidemic peak behavior and stabilization\nView Project\n\n\n\n\n\nAn extension of the SIR model that introduces an Exposed (latent) compartment for more realistic epidemic modeling.\n\nIncludes incubation period before infection\n\nImproved realism compared to SIR model\n\nBuilt with reusable and extensible OOP structure\nView Project\n\n\n\n\n\nExploratory data analysis of energy-related datasets, focusing on trends, comparisons, and insights into consumption and production patterns.\n\nView Project\n\n\n\n\n\nMachine learning project focused on predicting ocean conditions using environmental data.\n\nApplies ML models to oceanographic variables\n\nPredicts significant wave height\n\nEvaluates model performance and accuracy\nView Project"
+  },
+  {
+    "objectID": "projects/index.html#sir-epidemic-model",
+    "href": "projects/index.html#sir-epidemic-model",
+    "title": "Projects",
+    "section": "",
+    "text": "Agent-based simulation of disease spread using object-oriented programming principles.\n\nModels infection, recovery, and population dynamics\n\nModular design (Simulator + Visualizer architecture)\n\nDemonstrates epidemic peak behavior and stabilization\nView Project"
+  },
+  {
+    "objectID": "projects/index.html#seir-epidemic-model",
+    "href": "projects/index.html#seir-epidemic-model",
+    "title": "Projects",
+    "section": "",
+    "text": "An extension of the SIR model that introduces an Exposed (latent) compartment for more realistic epidemic modeling.\n\nIncludes incubation period before infection\n\nImproved realism compared to SIR model\n\nBuilt with reusable and extensible OOP structure\nView Project"
+  },
+  {
+    "objectID": "projects/index.html#energy-data-analysis",
+    "href": "projects/index.html#energy-data-analysis",
+    "title": "Projects",
+    "section": "",
+    "text": "Exploratory data analysis of energy-related datasets, focusing on trends, comparisons, and insights into consumption and production patterns.\n\nView Project"
+  },
+  {
+    "objectID": "projects/index.html#machine-learning-for-ocean-wave-prediction",
+    "href": "projects/index.html#machine-learning-for-ocean-wave-prediction",
+    "title": "Projects",
+    "section": "",
+    "text": "Machine learning project focused on predicting ocean conditions using environmental data.\n\nApplies ML models to oceanographic variables\n\nPredicts significant wave height\n\nEvaluates model performance and accuracy\nView Project"
+  },
+  {
+    "objectID": "projects/about.html",
+    "href": "projects/about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is Mykhaylo Orlov. I am a graduating Bachelor’s student at the Central European University in Vienna.\nI major in Data Science and Society, with a minor in Environmental Sciences."
+  },
+  {
+    "objectID": "projects/about.html#academic-background",
+    "href": "projects/about.html#academic-background",
+    "title": "About Me",
+    "section": "Academic Background",
+    "text": "Academic Background\nMy studies cover a broad range of scientific disciplines, including computer science, statistics, physics, and computational social sciences. This interdisciplinary foundation shapes how I approach data-driven problems."
+  },
+  {
+    "objectID": "projects/about.html#areas-of-interest",
+    "href": "projects/about.html#areas-of-interest",
+    "title": "About Me",
+    "section": "Areas of Interest",
+    "text": "Areas of Interest\n\nClimate change and data-driven environmental analysis\n\nComputational social science and modeling of social systems\n\nApplied mathematics in natural and social sciences\n\nComputer science and development of scientific tools and applications"
+  },
+  {
+    "objectID": "projects/about.html#about-my-work",
+    "href": "projects/about.html#about-my-work",
+    "title": "About Me",
+    "section": "About My Work",
+    "text": "About My Work\nI am particularly interested in using data science and modeling to better understand complex real-world systems, especially in environmental and social contexts. If you are more interested in my working experience, please refer to the Resume page."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to my portfolio. Here you will find a selection of my data science projects developed during my studies.\nFor more detailed descriptions, please visit the Projects page.\n\n\n\n\n\nThese projects explore how infectious diseases spread using classical epidemiological models (SIR and SEIR), applied under different scenarios and assumptions.\n\n\n\n\nAn exploratory data analysis of global fossil fuel emissions, focusing on trends, patterns, and environmental impact over time.\n\n\n\n\nA machine learning project aimed at predicting significant wave height using environmental and oceanographic data.\n\n\n\n\n\nThis site showcases my work in data science, including modeling, data analysis, and machine learning projects. Each project includes code, methodology, and insights gained from the analysis."
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Home",
+    "section": "",
+    "text": "These projects explore how infectious diseases spread using classical epidemiological models (SIR and SEIR), applied under different scenarios and assumptions.\n\n\n\n\nAn exploratory data analysis of global fossil fuel emissions, focusing on trends, patterns, and environmental impact over time.\n\n\n\n\nA machine learning project aimed at predicting significant wave height using environmental and oceanographic data."
+  },
+  {
+    "objectID": "index.html#about-this-portfolio",
+    "href": "index.html#about-this-portfolio",
+    "title": "Home",
+    "section": "",
+    "text": "This site showcases my work in data science, including modeling, data analysis, and machine learning projects. Each project includes code, methodology, and insights gained from the analysis."
+  },
+  {
+    "objectID": "projects/data_analysis/analysis.html",
+    "href": "projects/data_analysis/analysis.html",
+    "title": "Energy Data Analysis",
+    "section": "",
+    "text": "This project analyzes energy consumption data using an object-oriented pipeline.\n\n\n\n\nDataLoader → loads dataset\n\nDataProcessor → cleans and transforms data\n\nVisualizer → creates plots\n\nAnalysisApp → orchestrates workflow\n\n\n\n\n\n\nimport sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.data_analysis.analysis_app import AnalysisApp\n\n\ndata_path = PROJECT_ROOT / \"models\" / \"data_analysis\" / \"data\" / \"file.csv\"\napp = AnalysisApp(str(data_path))\n\ndf = app.run()\ndf.head()\n\nC:\\Users\\admin\\Uni\\project_OOP\\portfolio\\models\\data_analysis\\visualizer.py:21: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\n\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df[year_cols] = df[year_cols].replace(\",\", \".\", regex=True)\nC:\\Users\\admin\\Uni\\project_OOP\\portfolio\\models\\data_analysis\\visualizer.py:22: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\n\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df[year_cols] = df[year_cols].astype(float)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstate\nenergy_type\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n...\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n\n\n\n\n0\ntotal_eu\ntotal\n1489821.417\n1483949.536\n1444075.807\n1442531.699\n1434757.905\n1484378.791\n1534802.536\n1528428.102\n...\n1520808.237\n1468595.977\n1483551.593\n1500323.598\n1530359.262\n1519449.646\n1501827.238\n1379224.526\n1462342.209\n1395822.651\n\n\n1\ntotal_eu\nsolid fossil fuels\n382922.722\n361880.203\n336863.263\n320536.148\n313746.202\n310986.494\n310523.440\n302061.944\n...\n244923.871\n232764.838\n234081.145\n224585.773\n218775.373\n210260.473\n171825.350\n140531.749\n163365.542\n162043.628\n\n\n2\ntotal_eu\nnatural gas\n249793.009\n255840.624\n247244.030\n251696.870\n249029.582\n270556.005\n293533.977\n285729.899\n...\n321384.442\n283520.800\n296085.335\n313360.871\n331041.873\n324904.590\n335211.448\n327184.846\n339376.140\n294340.743\n\n\n3\ntotal_eu\noil and petroleum products (excluding biofuel ...\n581083.758\n584913.886\n577831.806\n578825.515\n579993.487\n602859.846\n618086.015\n621714.262\n...\n530309.555\n525234.824\n526020.790\n535565.564\n548444.600\n541134.880\n545257.431\n475784.781\n500454.543\n514268.023\n\n\n4\ntotal_eu\nrenewables and biofuels\n71047.951\n74104.623\n75711.453\n80284.283\n80709.539\n82824.280\n86663.640\n89869.700\n...\n198907.464\n198892.885\n204911.552\n208335.663\n216118.245\n225742.545\n232513.016\n239664.170\n252129.687\n249217.340\n\n\n\n\n5 rows × 35 columns"
+  },
+  {
+    "objectID": "projects/data_analysis/analysis.html#oop-structure",
+    "href": "projects/data_analysis/analysis.html#oop-structure",
+    "title": "Energy Data Analysis",
+    "section": "",
+    "text": "DataLoader → loads dataset\n\nDataProcessor → cleans and transforms data\n\nVisualizer → creates plots\n\nAnalysisApp → orchestrates workflow"
+  },
+  {
+    "objectID": "projects/data_analysis/analysis.html#example",
+    "href": "projects/data_analysis/analysis.html#example",
+    "title": "Energy Data Analysis",
+    "section": "",
+    "text": "import sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.data_analysis.analysis_app import AnalysisApp\n\n\ndata_path = PROJECT_ROOT / \"models\" / \"data_analysis\" / \"data\" / \"file.csv\"\napp = AnalysisApp(str(data_path))\n\ndf = app.run()\ndf.head()\n\nC:\\Users\\admin\\Uni\\project_OOP\\portfolio\\models\\data_analysis\\visualizer.py:21: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\n\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df[year_cols] = df[year_cols].replace(\",\", \".\", regex=True)\nC:\\Users\\admin\\Uni\\project_OOP\\portfolio\\models\\data_analysis\\visualizer.py:22: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\n\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df[year_cols] = df[year_cols].astype(float)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstate\nenergy_type\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n...\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n\n\n\n\n0\ntotal_eu\ntotal\n1489821.417\n1483949.536\n1444075.807\n1442531.699\n1434757.905\n1484378.791\n1534802.536\n1528428.102\n...\n1520808.237\n1468595.977\n1483551.593\n1500323.598\n1530359.262\n1519449.646\n1501827.238\n1379224.526\n1462342.209\n1395822.651\n\n\n1\ntotal_eu\nsolid fossil fuels\n382922.722\n361880.203\n336863.263\n320536.148\n313746.202\n310986.494\n310523.440\n302061.944\n...\n244923.871\n232764.838\n234081.145\n224585.773\n218775.373\n210260.473\n171825.350\n140531.749\n163365.542\n162043.628\n\n\n2\ntotal_eu\nnatural gas\n249793.009\n255840.624\n247244.030\n251696.870\n249029.582\n270556.005\n293533.977\n285729.899\n...\n321384.442\n283520.800\n296085.335\n313360.871\n331041.873\n324904.590\n335211.448\n327184.846\n339376.140\n294340.743\n\n\n3\ntotal_eu\noil and petroleum products (excluding biofuel ...\n581083.758\n584913.886\n577831.806\n578825.515\n579993.487\n602859.846\n618086.015\n621714.262\n...\n530309.555\n525234.824\n526020.790\n535565.564\n548444.600\n541134.880\n545257.431\n475784.781\n500454.543\n514268.023\n\n\n4\ntotal_eu\nrenewables and biofuels\n71047.951\n74104.623\n75711.453\n80284.283\n80709.539\n82824.280\n86663.640\n89869.700\n...\n198907.464\n198892.885\n204911.552\n208335.663\n216118.245\n225742.545\n232513.016\n239664.170\n252129.687\n249217.340\n\n\n\n\n5 rows × 35 columns"
+  },
+  {
+    "objectID": "projects/ml_project_ocean/ml_report.html",
+    "href": "projects/ml_project_ocean/ml_report.html",
+    "title": "Machine Learning Pipeline",
+    "section": "",
+    "text": "This project implements a modular machine learning pipeline using object-oriented design.\nIt handles data loading, preprocessing, model training, evaluation, and result export in a single workflow.\n\n\n\nThe pipeline follows these main steps:\n\nData Loading – reads raw data from disk\n\nData Cleaning – handles preprocessing and feature preparation\n\nModel Training – trains multiple models for comparison\n\nEvaluation – selects the best model based on RMSE\n\nOutput Generation – saves predictions and visualizations\n\n\n\n\n\nThe pipeline is encapsulated in the MLPipeline class:\n\nload_and_prepare()\nLoads dataset and splits it into training and validation sets\ntrain_and_evaluate()\nTrains all models and stores their RMSE scores\nselect_best_model()\nChooses the best-performing model\nrun()\nExecutes the full workflow end-to-end\n\nThis structure makes the pipeline reusable, testable, and easy to extend.\n\n\n\n\n\nimport sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.ml_project.src.pipeline import MLPipeline\n\n# Initialize and run pipeline\npipeline = MLPipeline()\nresults = pipeline.run()\n\nprint(\"Best model:\", results[\"best_model_name\"])\nprint(\"RMSE:\", results[\"rmse\"])\n\nBest model: random_forest\nRMSE: 0.08658417539539033\n\n\n\n\n\n\nAfter execution, the pipeline generates:\n\noutputs/predictions.csv – model predictions vs actual values\n\noutputs/figures/feature_importance.png – feature importance plot (if available)\n\n\n\n\n\nThe pipeline can be easily extended by:\n\nAdding new models in get_models()\n\nImproving preprocessing in clean_data()\n\nAdding additional evaluation metrics\n\nIntegrating hyperparameter tuning"
+  },
+  {
+    "objectID": "projects/ml_project_ocean/ml_report.html#pipeline-overview",
+    "href": "projects/ml_project_ocean/ml_report.html#pipeline-overview",
+    "title": "Machine Learning Pipeline",
+    "section": "",
+    "text": "The pipeline follows these main steps:\n\nData Loading – reads raw data from disk\n\nData Cleaning – handles preprocessing and feature preparation\n\nModel Training – trains multiple models for comparison\n\nEvaluation – selects the best model based on RMSE\n\nOutput Generation – saves predictions and visualizations"
+  },
+  {
+    "objectID": "projects/ml_project_ocean/ml_report.html#object-oriented-design",
+    "href": "projects/ml_project_ocean/ml_report.html#object-oriented-design",
+    "title": "Machine Learning Pipeline",
+    "section": "",
+    "text": "The pipeline is encapsulated in the MLPipeline class:\n\nload_and_prepare()\nLoads dataset and splits it into training and validation sets\ntrain_and_evaluate()\nTrains all models and stores their RMSE scores\nselect_best_model()\nChooses the best-performing model\nrun()\nExecutes the full workflow end-to-end\n\nThis structure makes the pipeline reusable, testable, and easy to extend."
+  },
+  {
+    "objectID": "projects/ml_project_ocean/ml_report.html#run-pipeline",
+    "href": "projects/ml_project_ocean/ml_report.html#run-pipeline",
+    "title": "Machine Learning Pipeline",
+    "section": "",
+    "text": "import sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.ml_project.src.pipeline import MLPipeline\n\n# Initialize and run pipeline\npipeline = MLPipeline()\nresults = pipeline.run()\n\nprint(\"Best model:\", results[\"best_model_name\"])\nprint(\"RMSE:\", results[\"rmse\"])\n\nBest model: random_forest\nRMSE: 0.08658417539539033"
+  },
+  {
+    "objectID": "projects/ml_project_ocean/ml_report.html#outputs",
+    "href": "projects/ml_project_ocean/ml_report.html#outputs",
+    "title": "Machine Learning Pipeline",
+    "section": "",
+    "text": "After execution, the pipeline generates:\n\noutputs/predictions.csv – model predictions vs actual values\n\noutputs/figures/feature_importance.png – feature importance plot (if available)"
+  },
+  {
+    "objectID": "projects/ml_project_ocean/ml_report.html#extensibility",
+    "href": "projects/ml_project_ocean/ml_report.html#extensibility",
+    "title": "Machine Learning Pipeline",
+    "section": "",
+    "text": "The pipeline can be easily extended by:\n\nAdding new models in get_models()\n\nImproving preprocessing in clean_data()\n\nAdding additional evaluation metrics\n\nIntegrating hyperparameter tuning"
+  },
+  {
+    "objectID": "projects/seir_model/seir.html",
+    "href": "projects/seir_model/seir.html",
+    "title": "SEIR Epidemic Model",
+    "section": "",
+    "text": "This project extends the SIR model by adding an Exposed (E) state and uses OOP principles to simulate the epidemic dynamics.\n\n\n\nPopulationSEIR class: Initializes agents (Susceptible, Exposed, Infected, Recovered)\n\nSEIRSimulator class: Runs the simulation over time\n\nVisualizer class: Handles plotting results\n\n\n\n\n\nimport sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.seir.seir_simulator import SEIRSimulator\nfrom models.seir.visualizer_seir import VisualizerSEIR\n\n# initialize SEIR simulation\nsim = SEIRSimulator(N=500, I0=0.01, beta=0.3, sigma=0.2, mu=0.1, t_max=200)\nhistory = sim.run()\n\n# visualize the results\nviz = VisualizerSEIR(history, title=\"SEIR Model Infection Dynamics\")\nviz.plot()\n\n\n\n\n\n\n\n\n\n\n\nYou can explore the model interactively:\n\n\nOpen in full screen"
+  },
+  {
+    "objectID": "projects/seir_model/seir.html#model-overview",
+    "href": "projects/seir_model/seir.html#model-overview",
+    "title": "SEIR Epidemic Model",
+    "section": "",
+    "text": "PopulationSEIR class: Initializes agents (Susceptible, Exposed, Infected, Recovered)\n\nSEIRSimulator class: Runs the simulation over time\n\nVisualizer class: Handles plotting results"
+  },
+  {
+    "objectID": "projects/seir_model/seir.html#run-simulation",
+    "href": "projects/seir_model/seir.html#run-simulation",
+    "title": "SEIR Epidemic Model",
+    "section": "",
+    "text": "import sys\nfrom pathlib import Path\n\nPROJECT_ROOT = Path().resolve().parents[1]\nsys.path.append(str(PROJECT_ROOT))\n\nfrom models.seir.seir_simulator import SEIRSimulator\nfrom models.seir.visualizer_seir import VisualizerSEIR\n\n# initialize SEIR simulation\nsim = SEIRSimulator(N=500, I0=0.01, beta=0.3, sigma=0.2, mu=0.1, t_max=200)\nhistory = sim.run()\n\n# visualize the results\nviz = VisualizerSEIR(history, title=\"SEIR Model Infection Dynamics\")\nviz.plot()"
+  },
+  {
+    "objectID": "projects/seir_model/seir.html#interactive-simulation",
+    "href": "projects/seir_model/seir.html#interactive-simulation",
+    "title": "SEIR Epidemic Model",
+    "section": "",
+    "text": "You can explore the model interactively:\n\n\nOpen in full screen"
+  }
+]

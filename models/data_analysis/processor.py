@@ -7,61 +7,63 @@ class DataProcessor:
 
     def clean(self):
 
-        df = self.df.rename(columns={'TIME': 'state', 'TIME.1': 'energy_type'})
-        df = df.iloc[1:, :].reset_index(drop=True)
-        df = df.copy()
+        df = self.df.copy()
 
         # -------------------------
-        # 1. Standardize country names
+        # 1. Rename columns
         # -------------------------
-        df = df.replace({
-            'European Union - 27 countries (from 2020)': 'total_eu',
-            'Bosnia and Herzegovina': 'bosnia_herzegovina',
-            'North Macedonia': 'north_macedonia',
-            'T?rkiye': 'turkey',
-            'United Kingdom': 'united_kingdom'
+        df = df.rename(columns={
+            "TIME": "state",
+            "TIME.1": "energy_type"
         })
 
         # -------------------------
-        # 2. Normalize text columns
+        # 2. Remove metadata row safely
         # -------------------------
-        df['state'] = df['state'].astype(str).str.lower().str.strip()
-        df['energy_type'] = df['energy_type'].astype(str).str.lower().str.strip()
+        df = df.iloc[1:].reset_index(drop=True)
 
         # -------------------------
-        # 3. Remove invalid rows
+        # 3. Standardize text
         # -------------------------
-        invalid_states = ['nan', ':', 'special value']
-        df = df[~df['state'].isin(invalid_states)]
+        df["state"] = df["state"].astype(str).str.lower().str.strip()
+        df["energy_type"] = df["energy_type"].astype(str).str.lower().str.strip()
+
+        df = df.replace({
+            "european union - 27 countries (from 2020)": "total_eu",
+            "bosnia and herzegovina": "bosnia_herzegovina",
+            "north macedonia": "north_macedonia",
+            "t?rkiye": "turkey",
+            "united kingdom": "united_kingdom"
+        })
 
         # -------------------------
-        # 4. Detect year columns safely
+        # 4. Remove invalid labels
+        # -------------------------
+        df = df[~df["state"].isin(["nan", ":", "special value"])]
+
+        # -------------------------
+        # 5. Detect numeric columns (years)
         # -------------------------
         year_cols = [c for c in df.columns if str(c).isdigit()]
 
         # -------------------------
-        # 5. Clean numeric values (robust)
+        # 6. Convert to numeric safely
         # -------------------------
-        for col in year_cols:
-            df[col] = (
-                df[col]
-                .astype(str)
-                .replace({':': np.nan, ';': np.nan, 'nan': np.nan})
-                .str.replace(',', '.', regex=False)
-            )
-            df[col] = pd.to_numeric(df[col], errors='coerce')
+        df[year_cols] = (
+            df[year_cols]
+            .replace({":": np.nan, ";": np.nan, "nan": np.nan})
+            .replace(",", ".", regex=True)
+            .apply(pd.to_numeric, errors="coerce")
+        )
 
         # -------------------------
-        # 6. Drop empty columns/rows
+        # 7. Final cleanup
         # -------------------------
-        df = df.dropna(how='all', subset=year_cols)
-        df = df.dropna(axis=1, how='all')
-
-        # optional: drop last row if it's garbage (safe version)
-        df = df.reset_index(drop=True)
+        df = df.dropna(how="all", subset=year_cols).reset_index(drop=True)
 
         self.df = df
         return df
 
+
     def summary(self):
-        return self.df.describe(include='all')
+        return self.df.describe()
