@@ -23,7 +23,7 @@ PROJECT_ROOT = Path().resolve().parents[1]
 sys.path.append(str(PROJECT_ROOT))
 
 from models.seir.seir_simulator import SEIRSimulator
-from models.seir.visualizer_seir import Visualizer
+from models.seir.visualizer_seir import VisualizerSEIR
 
 # initialize SEIR simulation
 sim = SEIRSimulator(N=500, I0=0.01, beta=0.3, sigma=0.2, mu=0.1, t_max=200)
