@@ -16,6 +16,12 @@ This project extends the SIR model by adding an **Exposed (E)** state and uses *
 ## Run Simulation
 
 ```{python}
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path().resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT))
+
 from models.seir.seir_simulator import SEIRSimulator
 from models.seir.visualizer_seir import Visualizer
 

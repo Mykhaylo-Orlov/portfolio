@@ -51,6 +51,12 @@ This modular structure allows the model to be easily extended (e.g., to SEIR).
 ## ▶️ Run Simulation
 
 ```{python}
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path().resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT))
+
 from models.sir.sir_simulator import SIRSimulator
 from models.sir_model.visualizer_sir import VisualizerSIR
 
